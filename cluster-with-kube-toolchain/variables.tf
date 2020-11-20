@@ -49,12 +49,12 @@ variable kube_version {
 
 variable "cluster_namespace" {
   type        = string
-  description = "Kubernetes namespace to deploy into (`kubectl get ns`)"
+  description = "Kubernetes namespace to deploy into. NOTE: If the namespace does not exist, it will be created."
 }
 
 variable "container_registry_namespace" {
   type        = string
-  description = "IBM Container Registry namespace to save image into"
+  description = "IBM Container Registry namespace to save image into. NOTE: If the namespace does not exist, it will be created."
 }
 
 variable "language" {
