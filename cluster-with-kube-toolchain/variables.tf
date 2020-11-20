@@ -5,17 +5,12 @@ variable "ibmcloud_api_key" {
 
 variable "resource_group" {
   type        = string
-  description = "Resource group name where the toolchain should be created"
+  description = "Resource group name where the toolchain should be created (`ibmcloud resource groups`)"
 }
 
 variable "cluster_name" {
   type        = string
   description = "Name of new Kubernetes cluster to create"
-}
-
-variable "resource_group_id" {
-   default = ""
-   description = "The ID (not Account ID) from `ibmcloud resource group <NAME>`"
 }
 
 variable "machine_type" {
