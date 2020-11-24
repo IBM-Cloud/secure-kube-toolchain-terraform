@@ -59,5 +59,6 @@ variable "container_registry_namespace" {
 
 variable "language" {
   type        = string
-  description = "Language of app to be deployed with the toolchain. Available options: [`node`, `java`, `liberty`]"
+  description = "Language of app to be deployed with the toolchain. Available options: [`nodejs-express-app`, `java-liberty-app`, `java-spring-app`]"
+  default = "nodejs-express-app"
 }
