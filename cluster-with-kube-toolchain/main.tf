@@ -28,7 +28,7 @@ module "ibm-kubernetes-toolchain" {
   ibmcloud_api_key  = var.ibmcloud_api_key
   region            = "us-south"
   toolchain_name    = "terraform-toolchain-${var.language}-${random_string.random.result}"
-  application_repo  = "https://github.com/IBM/${var.language}/archive/latest.zip"
+  application_repo  = "https://github.com/IBM/${var.language}/archive/terraform.zip"
   resource_group    = var.resource_group
   cluster_name      = ibm_container_cluster.cluster.name
   cluster_namespace = var.cluster_namespace
